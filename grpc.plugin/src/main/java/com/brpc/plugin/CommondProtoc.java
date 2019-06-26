@@ -1,22 +1,17 @@
 package com.brpc.plugin;
 
+import com.github.os72.protocjar.Protoc;
+import com.google.common.collect.ImmutableList;
+import com.google.protobuf.DescriptorProtos.FileDescriptorSet;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.github.os72.protocjar.Protoc;
-import com.google.common.collect.ImmutableList;
-import com.google.protobuf.DescriptorProtos.FileDescriptorSet;
-
-/**
- * @author shimingliu 2016年12月21日 下午3:06:47
- * @version CommondProtoc.java, v 0.0.1 2016年12月21日 下午3:06:47 shimingliu
- */
 public class CommondProtoc {
 
     private static final Logger logger = LoggerFactory.getLogger(CommondProtoc.class);

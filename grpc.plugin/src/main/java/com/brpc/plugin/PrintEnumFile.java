@@ -1,14 +1,10 @@
 package com.brpc.plugin;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
 import com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto;
 
-/**
- * @author shimingliu 2016年12月19日 下午3:14:06
- * @version GenerateFileUtil.java, v 0.0.1 2016年12月19日 下午3:14:06 shimingliu
- */
+import java.util.List;
+
 public final class PrintEnumFile extends AbstractPrint {
 
     private List<EnumValueDescriptorProto> enumFields;

@@ -74,29 +74,4 @@ public class Utils {
         return host;
     }
 
-
-    public static boolean isDevelop() {
-        try {
-            String os = System.getProperty("os.name");
-            return os.toLowerCase().contains("mac") || os.toLowerCase().contains("windows");
-        } catch (Exception e) {
-
-        }
-        return false;
-    }
-
-
-    public static void setSpringApplicationName(SpringApplication app, String springApplicationName) {
-        if (StringUtils.isEmpty(springApplicationName)) {
-            return;
-        }
-        springApplicationName = isDevelop() ? springApplicationName + ".local" : springApplicationName;
-
-        Properties p = new Properties();
-        p.setProperty("spring.application.name", springApplicationName);
-
-        app.setDefaultProperties(p);
-    }
-
-
 }

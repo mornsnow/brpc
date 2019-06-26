@@ -1,18 +1,12 @@
 package com.brpc.plugin;
 
+import com.google.common.collect.Lists;
+import com.google.protobuf.DescriptorProtos.MethodDescriptorProto;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
-
-import com.google.common.collect.Lists;
-import com.google.protobuf.DescriptorProtos.MethodDescriptorProto;
-
-/**
- * 生成服务提供者代码
- * 
- * @author joe
- */
 public final class PrintServiceServerImplFile extends AbstractPrint {
 
     private Map<String, String>         pojoTypeCache;

@@ -1,21 +1,16 @@
 package com.brpc.plugin;
 
+import com.google.protobuf.DescriptorProtos.*;
+import com.google.protobuf.Descriptors.FieldDescriptor;
+import com.google.protobuf.ProtocolStringList;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
-
-import com.google.protobuf.Descriptors.FieldDescriptor;
-import com.google.protobuf.ProtocolStringList;
-import com.google.protobuf.DescriptorProtos.*;
-
-/**
- * @author shimingliu 2016年12月17日 下午1:43:38
- * @version Proto2Interface.java, v 0.0.1 2016年12月17日 下午1:43:38 shimingliu
- */
 public class Proto2ServicePojo {
 
     private final String        discoveryRoot;

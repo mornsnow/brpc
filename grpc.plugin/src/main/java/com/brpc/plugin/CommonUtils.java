@@ -1,13 +1,9 @@
 package com.brpc.plugin;
 
-import java.util.Map;
-
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * @author shimingliu 2016年12月21日 下午3:40:44
- * @version CommonUtils.java, v 0.0.1 2016年12月21日 下午3:40:44 shimingliu
- */
+import java.util.Map;
+
 public final class CommonUtils {
 
     private CommonUtils(){

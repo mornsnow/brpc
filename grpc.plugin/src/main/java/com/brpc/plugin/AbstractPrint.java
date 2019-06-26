@@ -1,16 +1,12 @@
 package com.brpc.plugin;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
-
-/**
- * @author shimingliu 2016年12月21日 下午4:12:41
- * @version AbstractPrint.java, v 0.0.1 2016年12月21日 下午4:12:41 shimingliu
- */
 public abstract class AbstractPrint {
 
     protected final String fileRootPath;
